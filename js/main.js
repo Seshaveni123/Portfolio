@@ -396,49 +396,6 @@
     update();
   };
 
-  const initLiveStatus = () => {
-    const pill = qs('#availabilityPill');
-    if (!pill) return;
-
-    const setState = (kind, text) => {
-      pill.classList.remove('is-live', 'is-down', 'is-warning');
-      if (kind) pill.classList.add(kind);
-      pill.textContent = text;
-    };
-
-    if (!supportsServerRequests) {
-      setState('is-warning', 'Open via local server to enable the contact form');
-      return;
-    }
-
-    const check = async () => {
-      try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 4000);
-        const response = await fetch(apiUrl('/api/health'), { cache: 'no-store', signal: controller.signal });
-        clearTimeout(timeoutId);
-
-        if (!response.ok) throw new Error('Health check failed');
-        const data = await response.json();
-
-        if (data?.status === 'ok' && data?.emailConfigured && data?.emailReady) {
-          setState('is-live', 'Live status: available');
-        } else if (data?.status === 'ok' && data?.emailConfigured) {
-          setState('is-warning', 'Server is live, but email is temporarily unavailable');
-        } else if (data?.status === 'ok') {
-          setState('is-warning', 'Server is live, but email is not configured');
-        } else {
-          setState('is-down', 'Live status: unavailable');
-        }
-      } catch {
-        setState('is-down', 'Live status: unavailable');
-      }
-    };
-
-    check();
-    window.setInterval(check, 60_000);
-  };
-
   const initContactForm = () => {
     const contactForm = qs('#contactForm');
     const formStatus = qs('#formStatus');
@@ -579,7 +536,6 @@
     initMobileNav();
     initBackToTop();
     initMessageCounter();
-    initLiveStatus();
     initContactForm();
     initCopyButtons();
 

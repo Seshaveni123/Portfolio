@@ -2295,36 +2295,6 @@ html[data-theme='light'] .nav-btn-outline:hover {
   color: var(--red);
 }
 
-.availability-pill {
-  position: fixed;
-  left: clamp(14px, 2vw, 28px);
-  bottom: clamp(14px, 2vw, 28px);
-  z-index: 79;
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(20, 20, 22, .92);
-  color: var(--ink-2);
-  font-size: 12px;
-  font-family: var(--font-mono);
-  backdrop-filter: blur(16px);
-}
-
-.availability-pill.is-live {
-  border-color: rgba(122, 232, 162, .3);
-  color: var(--green);
-}
-
-.availability-pill.is-down {
-  border-color: rgba(232, 122, 122, .3);
-  color: var(--red);
-}
-
-.availability-pill.is-warning {
-  border-color: rgba(255, 183, 77, .35);
-  color: var(--accent);
-}
-
 /* ---- ANIMATIONS (Handled by GSAP) ---- */
 .reveal-up,
 .reveal-left,
@@ -2493,10 +2463,6 @@ section[id] {
     align-items: stretch;
   }
 
-  .availability-pill {
-    bottom: 74px;
-    max-width: calc(100vw - 28px);
-  }
 }
 
 @media (max-width: 560px) {
@@ -2820,11 +2786,6 @@ html[data-theme='light'] .toast {
   background: rgba(240, 237, 230, 0.97);
   border-color: var(--border-2);
   color: var(--ink);
-}
-
-/* Availability pill */
-html[data-theme='light'] .availability-pill {
-  background: rgba(240, 237, 230, 0.95);
 }
 
 /* Brand mark in footer stays orange always */
