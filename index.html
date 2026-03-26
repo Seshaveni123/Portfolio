@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Veeramreddy Seshaveni - Aspiring Data Scientist passionate about building data-driven solutions and deriving insights using Python, Machine Learning, Data Analytics, and Data Visualization tools." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Veeramreddy Seshaveni - Portfolio" />
+  <meta property="og:description" content="Turning Data Into Intelligent Decisions." />
+  <meta property="og:type" content="website" />
+  <title>Seshaveni Veeramreddy | Data Science Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=107" />
+
+  <!-- Smooth Scroll (Lenis) -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Veeramreddy Seshaveni",
+    "jobTitle":"Aspiring Data Scientist | Data Analyst",
+    "email":"veeramreddyseshaveni6661@gmail.com",
+    "telephone":"+91-9959245845",
+    "sameAs":["https://www.linkedin.com/in/seshaveni758","https://github.com/Seshaveni123"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="pl-content">
+      <div class="pl-ring-wrapper">
+        <svg class="pl-ring" viewBox="0 0 100 100">
+          <circle class="pl-track" cx="50" cy="50" r="46"></circle>
+          <circle class="pl-progress" cx="50" cy="50" r="46"></circle>
+        </svg>
+        <span class="pl-text">S</span>
+      </div>
+      <div class="pl-bar-container">
+        <div class="pl-bar" id="plBar"></div>
+      </div>
+      <div class="pl-pct" id="plPct">0%</div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Header (Pill shaped floating navbar) -->
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-text">S <span class="brand-dot">.</span></span>
+      </a>
+
+      <div class="nav-links" data-nav>
+        <a class="nav-link" href="#about" data-text="About">About</a>
+        <a class="nav-link" href="#skills" data-text="Skills">Skills</a>
+        <a class="nav-link" href="#work" data-text="Projects">Projects</a>
+        <a class="nav-link" href="#certifications" data-text="certifications">certifications</a>
+        <a class="nav-link" href="#achievements" data-text="Achievements">Achievements</a>
+        <a class="nav-link" href="#contact" data-text="Contact">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <a class="nav-btn nav-btn-outline" href="resume.pdf" download>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          CV
+        </a>
+        <button class="nav-icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <!-- Moon icon (shown in dark mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun icon (shown in light mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <a class="nav-btn nav-btn-primary" href="#contact">Hire Me</a>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home" data-section>
+      <div class="hero-bg" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-gradient"></div>
+      </div>
+
+      <div class="shell hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          Available for internships &amp; collaborations
+        </div>
+
+        <div class="hero-profile">
+          <div class="hero-photo-wrap reveal-up" data-delay="0">
+            <img src="images/sesha.jpeg" alt="Veeramreddy Seshaveni" class="hero-photo">
+          </div>
+          <h1 class="hero-name reveal-up" data-delay="100">
+            Seshaveni <span class="hero-name-accent">Veeramreddy</span>
+          </h1>
+        </div>
+
+        <p class="hero-desc reveal-up" data-delay="300">
+          Aspiring Data Scientist passionate about building data-driven solutions and deriving insights using Python,
+          Machine Learning,
+          Data Analytics, &amp; Data Visualization tools.
+        </p>
+
+        <div class="hero-actions reveal-up" data-delay="400">
+          <a class="btn btn-primary" href="#work">
+            <span>View Projects</span>
+            <svg viewBox="0 0 16 16">
+              <path d="M2 8h12M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" fill="none" />
+            </svg>
+          </a>
+          <a class="btn btn-outline" href="resume.pdf" download>
+            <svg viewBox="0 0 16 16">
+              <path d="M8 2v8M4 7l4 4 4-4M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" fill="none" />
+            </svg>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+        <div class="hero-chips reveal-up" data-delay="500">
+          <a class="hero-chip" href="mailto:veeramreddyseshaveni6661@gmail.com">
+            <svg viewBox="0 0 16 16">
+              <path d="M2 4h12v9H2z" stroke="currentColor" stroke-width="1.2" fill="none" />
+              <path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.2" fill="none" />
+            </svg>
+            Gmail
+          </a>
+          <a class="hero-chip" href="https://www.linkedin.com/in/seshaveni758" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 16 16">
+              <path
+                d="M2 5.5h3V14H2zM3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM6.5 5.5h2.8v1.1h.04c.39-.74 1.34-1.5 2.76-1.5C14.3 5.1 14.9 7 14.9 9.5V14h-3V10c0-1-.02-2.4-1.46-2.4-1.46 0-1.69 1.15-1.69 2.32V14h-3V5.5z"
+                fill="currentColor" />
+            </svg>
+            LinkedIn
+          </a>
+          <a class="hero-chip" href="https://github.com/Seshaveni123" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 16 16">
+              <path
+                d="M8 1a7 7 0 0 0-2.21 13.64c.35.06.48-.15.48-.34v-1.2c-1.94.42-2.35-.82-2.35-.82-.32-.8-.78-1.02-.78-1.02-.64-.44.05-.43.05-.43.71.05 1.08.73 1.08.73.63 1.07 1.64.76 2.04.58.06-.46.25-.76.44-.94-1.55-.18-3.18-.78-3.18-3.47 0-.77.27-1.4.73-1.89-.07-.18-.32-.9.07-1.87 0 0 .6-.19 1.96.73A6.82 6.82 0 0 1 8 5.16c.54 0 1.09.07 1.6.22 1.36-.92 1.96-.73 1.96-.73.39.97.14 1.69.07 1.87.46.49.73 1.12.73 1.89 0 2.7-1.64 3.29-3.2 3.46.25.22.48.64.48 1.3v1.92c0 .19.13.4.48.34A7 7 0 0 0 8 1z"
+                fill="currentColor" />
+            </svg>
+            GitHub
+          </a>
+          <span class="hero-chip hero-chip--loc">
+            <svg viewBox="0 0 16 16">
+              <path d="M8 1a5 5 0 0 0-5 5c0 3.5 5 9 5 9s5-5.5 5-9a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                fill="currentColor" />
+            </svg>
+            Phagwara, India
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" data-section>
+      <div class="shell">
+        <div class="about-grid">
+          <div class="about-left reveal-left">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">A calm, curious builder<br>who finds stories in data.</h2>
+            <p>
+              I'm a Computer Science student at <strong>Lovely Professional University</strong> with a deep passion for
+              Data Science, Machine Learning, and Business Intelligence. I enjoy transforming messy, complex datasets
+              into clear, actionable insights that drive real decisions.
+            </p>
+            <p>
+              Alongside my studies, I work on personal projects that apply machine learning and data visualization to
+              real-world problems.
+              I also enjoy experimenting with new tools and techniques, reading the latest research in AI and ML, and
+              designing dashboards that make complex data easy to interpret and act upon.
+              My goal is to transform raw data into clear, actionable insights that can drive meaningful impact.
+
+
+
+            </p>
+
+          </div>
+
+          <div class="about-right reveal-right">
+            <div class="about-education">
+              <div class="section-label">Education</div>
+
+              <div class="edu-list">
+                <article class="edu-card reveal-up" data-delay="0">
+                  <h3 class="edu-school">Lovely Professional University</h3>
+                  <div class="edu-degree">Bachelor of Technology - Computer Science and Engineering</div>
+                  <div class="edu-score">CGPA: 7.5</div>
+                </article>
+
+                <article class="edu-card reveal-up" data-delay="100">
+                  <h3 class="edu-school">Bhashyam Junior College</h3>
+                  <div class="edu-degree">Intermediate</div>
+                  <div class="edu-score">Percentage: 96.8%</div>
+                </article>
+
+                <article class="edu-card reveal-up" data-delay="200">
+                  <h3 class="edu-school">Bhashyam School</h3>
+                  <div class="edu-degree">Matriculation</div>
+                  <div class="edu-score">Percentage: 100%</div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-dark" id="skills" data-section>
+      <div class="shell">
+        <div class="section-header reveal-up">
+          <div class="section-label light">Skills &amp; Tools</div>
+          <h2 class="section-title light">A practical toolkit for<br>analysis &amp; modeling.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal-left" data-delay="0">
+            <div class="skill-group-head">
+              <span class="skill-group-icon">&lt;/&gt;</span>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar"><span class="skill-bar-label">Python</span>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="92"></div>
+                </div><span class="skill-bar-pct">92%</span>
+              </div>
+              <div class="skill-bar"><span class="skill-bar-label">JavaScript</span>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="72"></div>
+                </div><span class="skill-bar-pct">72%</span>
+              </div>
+              <div class="skill-bar"><span class="skill-bar-label">SQL</span>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="80"></div>
+                </div><span class="skill-bar-pct">80%</span>
+              </div>
+              <div class="skill-bar"><span class="skill-bar-label">C / C++</span>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="65"></div>
+                </div><span class="skill-bar-pct">65%</span>
+              </div>
+              <div class="skill-bar"><span class="skill-bar-label">HTML / CSS</span>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-w="78"></div>
+                </div><span class="skill-bar-pct">78%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group reveal-right" data-delay="0">
+            <div class="skill-group-head">
+              <span class="skill-group-icon">[]</span>
+              <h3>ML Libraries</h3>
+            </div>
+            <div class="tools-grid tools-grid--ml">
+              <div class="tool-badge">
+                <img src="icons/numpy.svg" alt="NumPy Logo" class="tool-icon img-icon">
+                <span>NumPy</span>
+              </div>
+              <div class="tool-badge">
+                <img src="icons/pandas.svg" alt="Pandas Logo" class="tool-icon img-icon">
+                <span>Pandas</span>
+              </div>
+              <div class="tool-badge">
+                <img src="icons/scikitlearn.svg" alt="Scikit-Learn Logo" class="tool-icon img-icon">
+                <span>Scikit-Learn</span>
+              </div>
+              <div class="tool-badge">
+                <img src="icons/matplotlib.svg" alt="Matplotlib Logo" class="tool-icon img-icon">
+                <span>Matplotlib</span>
+              </div>
+              <div class="tool-badge">
+                <img src="icons/seaborn.svg" alt="Seaborn Logo" class="tool-icon img-icon">
+                <span>Seaborn</span>
+              </div>
+              <div class="tool-badge">
+                <img src="icons/scipy.svg" alt="SciPy Logo" class="tool-icon img-icon">
+                <span>SciPy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group skill-group--center reveal-up" data-delay="0">
+            <div class="skill-group-head">
+              <span class="skill-group-icon">◆</span>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <div class="tools-grid">
+              <div class="tool-badge">
+                <div class="tool-icon tool-powerbi">PBI</div>
+                <span>Power BI</span>
+              </div>
+
+              <div class="tool-badge">
+                <div class="tool-icon tool-mysql">SQL</div>
+                <span>MySQL</span>
+              </div>
+              <div class="tool-badge">
+                <div class="tool-icon tool-excel">XLS</div>
+                <span>Excel</span>
+              </div>
+              <div class="tool-badge">
+                <div class="tool-icon tool-git">Git</div>
+                <span>GitHub</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="skill-group skill-group--wide reveal-up" data-delay="300">
+            <div class="skill-group-head">
+              <span class="skill-group-icon">✦</span>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="soft-skills">
+              <div class="soft-skill">
+                <div class="soft-ring" data-val="90"><svg viewBox="0 0 36 36">
+                    <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2.5" />
+                    <circle class="soft-arc" cx="18" cy="18" r="15.9" fill="none" stroke="var(--accent)"
+                      stroke-width="2.5" stroke-dasharray="0 100" stroke-linecap="round"
+                      transform="rotate(-90 18 18)" />
+                  </svg><span>90</span></div>
+                <div class="soft-skill-label">Problem Solving</div>
+              </div>
+              <div class="soft-skill">
+                <div class="soft-ring" data-val="88"><svg viewBox="0 0 36 36">
+                    <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2.5" />
+                    <circle class="soft-arc" cx="18" cy="18" r="15.9" fill="none" stroke="var(--accent)"
+                      stroke-width="2.5" stroke-dasharray="0 100" stroke-linecap="round"
+                      transform="rotate(-90 18 18)" />
+                  </svg><span>88</span></div>
+                <div class="soft-skill-label">Analytical Thinking</div>
+              </div>
+              <div class="soft-skill">
+                <div class="soft-ring" data-val="85"><svg viewBox="0 0 36 36">
+                    <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2.5" />
+                    <circle class="soft-arc" cx="18" cy="18" r="15.9" fill="none" stroke="var(--accent)"
+                      stroke-width="2.5" stroke-dasharray="0 100" stroke-linecap="round"
+                      transform="rotate(-90 18 18)" />
+                  </svg><span>85</span></div>
+                <div class="soft-skill-label">Adaptability</div>
+              </div>
+              <div class="soft-skill">
+                <div class="soft-ring" data-val="82"><svg viewBox="0 0 36 36">
+                    <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2.5" />
+                    <circle class="soft-arc" cx="18" cy="18" r="15.9" fill="none" stroke="var(--accent)"
+                      stroke-width="2.5" stroke-dasharray="0 100" stroke-linecap="round"
+                      transform="rotate(-90 18 18)" />
+                  </svg><span>82</span></div>
+                <div class="soft-skill-label">Time Management</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work" data-section>
+      <div class="shell">
+        <div class="section-header reveal-up">
+          <div class="section-label">Selected Projects</div>
+          <h2 class="section-title">Projects built with care &amp;<br>measurable impact.</h2>
+        </div>
+
+        <div class="work-toolbar reveal-up">
+          <div class="work-filters" role="tablist" aria-label="Project filters">
+            <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="analysis">Analysis</button>
+            <button class="filter-chip" type="button" data-filter="ai">BI &amp; Dashboards</button>
+            <button class="filter-chip" type="button" data-filter="bi">Machine Learning</button>
+          </div>
+          <label class="work-search">
+            <span class="sr-only">Search projects</span>
+            <input id="projectSearch" type="search" placeholder="Search projects, tools, topics">
+          </label>
+        </div>
+
+        <div class="work-list">
+          <article class="work-item reveal-up" data-delay="0" data-category="analysis"
+            data-search="data driven infrastructure analytics python pandas numpy seaborn matplotlib scipy delays costs infrastructure">
+            <img src="img/proj-analytics.png?v=2" alt="Infrastructure Analytics" class="work-thumb">
+            <div class="work-body">
+              <div class="work-meta">
+                <span class="work-tag">Data Analysis</span>
+                <span class="work-tag">Python</span>
+              </div>
+              <h3 class="work-title">Data Driven Infrastructure Analytics</h3>
+              <ul class="work-desc-list">
+                <li>Analyzed project data to identify delays and cost overruns.</li>
+                <li>Performed EDA and created interactive visualizations using Python.</li>
+                <li>Provided insights that improved project assessment accuracy by 35%.</li>
+              </ul>
+              <div class="work-stack-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon" title="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="tech-icon" title="Pandas">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="tech-icon" title="NumPy">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" class="tech-icon" title="Matplotlib">
+                <img src="icons/seaborn.svg" alt="Seaborn" class="tech-icon" title="Seaborn">
+                <img src="icons/scipy.svg" alt="SciPy" class="tech-icon" title="SciPy">
+              </div>
+
+            </div>
+            <div class="work-links">
+              <a class="work-link" href="https://github.com/Seshaveni123/data-driven-infrastructure-analytics"
+                target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 16 16">
+                  <path
+                    d="M8 1a7 7 0 0 0-2.21 13.64c.35.06.48-.15.48-.34v-1.2c-1.94.42-2.35-.82-2.35-.82-.32-.8-.78-1.02-.78-1.02-.64-.44.05-.43.05-.43.71.05 1.08.73 1.08.73.63 1.07 1.64.76 2.04.58.06-.46.25-.76.44-.94-1.55-.18-3.18-.78-3.18-3.47 0-.77.27-1.4.73-1.89-.07-.18-.32-.9.07-1.87 0 0 .6-.19 1.96.73A6.82 6.82 0 0 1 8 5.16c.54 0 1.09.07 1.6.22 1.36-.92 1.96-.73 1.96-.73.39.97.14 1.69.07 1.87.46.49.73 1.12.73 1.89 0 2.7-1.64 3.29-3.2 3.46.25.22.48.64.48 1.3v1.92c0 .19.13.4.48.34A7 7 0 0 0 8 1z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+              <a class="work-link" href="#contact" aria-label="Details">
+                <svg viewBox="0 0 16 16">
+                  <path d="M2 8h12M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item reveal-up" data-delay="100" data-category="ai"
+            data-search="ai powered meal preparation web app flask python javascript spoonacular gemini nutrition diet planning chatbot">
+            <img src="img/proj-dashboard.png?v=2" alt="MGNREGA Dashboard" class="work-thumb">
+            <div class="work-body">
+              <div class="work-meta">
+                <span class="work-tag">DATA ANALYSIS</span>
+                <span class="work-tag">POWER BI</span>
+              </div>
+              <h3 class="work-title">MGNREGA Data Analysis Dashboard</h3>
+              <ul class="work-desc-list">
+                <li>Built an interactive Power BI dashboard analyzing MGNREGA employment and expenditure data.</li>
+                <li>Provided insights into budget utilization, employment trends, and women participation.</li>
+                <li>Analyzed data across multiple Indian states to drive policy decisions.</li>
+              </ul>
+              <div class="work-stack-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" class="tech-icon" title="Power BI">
+                <img src="icons/dax.png" alt="DAX" class="tech-icon" title="DAX">
+                <img src="icons/datavis.png" alt="Data Visualization" class="tech-icon" title="Data Visualization">
+                <img src="icons/modeling.png" alt="Data Modeling" class="tech-icon" title="Data Modeling">
+              </div>
+
+            </div>
+            <div class="work-links">
+              <a class="work-link" href="https://github.com/Seshaveni123/MGNREGA-Data-Analysis-PowerBI" target="_blank"
+                rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 16 16">
+                  <path
+                    d="M8 1a7 7 0 0 0-2.21 13.64c.35.06.48-.15.48-.34v-1.2c-1.94.42-2.35-.82-2.35-.82-.32-.8-.78-1.02-.78-1.02-.64-.44.05-.43.05-.43.71.05 1.08.73 1.08.73.63 1.07 1.64.76 2.04.58.06-.46.25-.76.44-.94-1.55-.18-3.18-.78-3.18-3.47 0-.77.27-1.4.73-1.89-.07-.18-.32-.9.07-1.87 0 0 .6-.19 1.96.73A6.82 6.82 0 0 1 8 5.16c.54 0 1.09.07 1.6.22 1.36-.92 1.96-.73 1.96-.73.39.97.14 1.69.07 1.87.46.49.73 1.12.73 1.89 0 2.7-1.64 3.29-3.2 3.46.25.22.48.64.48 1.3v1.92c0 .19.13.4.48.34A7 7 0 0 0 8 1z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+              <a class="work-link" href="#contact" aria-label="Request Demo">
+                <svg viewBox="0 0 16 16">
+                  <path d="M2 8h12M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item reveal-up" data-delay="200" data-category="bi"
+            data-search="anime recommendation system machine learning recommendation power bi dashboard excel sql collaborative filtering">
+            <img src="img/proj-anime.png?v=2" alt="Anime Recommendation System" class="work-thumb">
+            <div class="work-body">
+              <div class="work-meta">
+                <span class="work-tag">ML + BI</span>
+                <span class="work-tag">Recommendation</span>
+              </div>
+              <h3 class="work-title">Anime Recommendation System</h3>
+              <ul class="work-desc-list">
+                <li>Developed a system that recommends anime based on user preferences.</li>
+                <li>Created insightful dashboards to visually analyze large datasets.</li>
+                <li>Utilized Python, SQL, Excel, and machine learning models for data processing.</li>
+              </ul>
+              <div class="work-stack-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon" title="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="tech-icon" title="SQL">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" class="tech-icon" title="Power BI">
+                <img src="icons/excel.png" alt="Excel" class="tech-icon" title="Excel">
+                <img src="icons/scikitlearn.svg" alt="Scikit-Learn" class="tech-icon" title="Scikit-Learn">
+              </div>
+
+            </div>
+            <div class="work-links">
+              <a class="work-link" href="https://github.com/Seshaveni123/Anime_EDA_and_Recommendation_System"
+                target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 16 16">
+                  <path
+                    d="M8 1a7 7 0 0 0-2.21 13.64c.35.06.48-.15.48-.34v-1.2c-1.94.42-2.35-.82-2.35-.82-.32-.8-.78-1.02-.78-1.02-.64-.44.05-.43.05-.43.71.05 1.08.73 1.08.73.63 1.07 1.64.76 2.04.58.06-.46.25-.76.44-.94-1.55-.18-3.18-.78-3.18-3.47 0-.77.27-1.4.73-1.89-.07-.18-.32-.9.07-1.87 0 0 .6-.19 1.96.73A6.82 6.82 0 0 1 8 5.16c.54 0 1.09.07 1.6.22 1.36-.92 1.96-.73 1.96-.73.39.97.14 1.69.07 1.87.46.49.73 1.12.73 1.89 0 2.7-1.64 3.29-3.2 3.46.25.22.48.64.48 1.3v1.92c0 .19.13.4.48.34A7 7 0 0 0 8 1z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+              <a class="work-link" href="#contact" aria-label="Ask for Report">
+                <svg viewBox="0 0 16 16">
+                  <path d="M2 8h12M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+        <p class="work-empty" id="workEmpty" hidden>No projects found</p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section section-tint" id="certifications" data-section>
+      <div class="shell">
+        <div class="section-header reveal-up">
+          <div class="section-label">Certifications</div>
+          <h2 class="section-title">Certificates earned<br>and applied in practice.</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card" data-delay="0">
+            <div class="cert-top">
+              <div class="cert-issuer">NPTEL</div>
+              <a class="cert-link"
+                href="https://drive.google.com/file/d/1mgO3zL8nWH12xuYTS3Um_tHd1lOl_tb2/view?usp=sharing"
+                target="_blank" rel="noreferrer">View online</a>
+            </div>
+            <h3 class="cert-title">Cloud Computing</h3>
+            <div class="cert-org">IIT Kharagpur</div>
+          </article>
+
+          <article class="cert-card" data-delay="100">
+            <div class="cert-top">
+              <div class="cert-issuer">FreeCodeCamp</div>
+              <a class="cert-link"
+                href="https://drive.google.com/file/d/1mSkh2v7Yl1AigMkc-crt4h_FrULYgo0X/view?usp=sharing"
+                target="_blank" rel="noreferrer">View online</a>
+            </div>
+            <h3 class="cert-title">Responsive Web Design</h3>
+            <div class="cert-org">FreeCodeCamp</div>
+          </article>
+
+          <article class="cert-card" data-delay="200">
+            <div class="cert-top">
+              <div class="cert-issuer">Google Workspace</div>
+              <a class="cert-link"
+                href="https://drive.google.com/file/d/19UT_BUHQ4H6obb_YIJyIIxBeh7v0gUGC/view?usp=sharing"
+                target="_blank" rel="noreferrer">View online</a>
+            </div>
+            <h3 class="cert-title">Bring AI to AI Workshop</h3>
+            <div class="cert-org">Google Workspace</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements" data-section>
+      <div class="shell">
+        <div class="section-header reveal-up">
+          <div class="section-label">Achievements</div>
+          <h2 class="section-title">Milestones, badges,<br>and continuous learning.</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card" data-delay="0">
+            <div class="cert-top">
+              <div class="cert-issuer">LeetCode</div>
+              <a class="cert-link" href="https://leetcode.com/u/seshaveni1/" target="_blank" rel="noreferrer">View
+                profile</a>
+            </div>
+            <h3 class="cert-title">Solved 150+ coding problems</h3>
+            <div class="cert-org">Strengthened problem-solving and algorithmic skills</div>
+          </article>
+
+          <article class="cert-card" data-delay="100">
+            <div class="cert-top">
+              <div class="cert-issuer">HackerRank</div>
+              <a class="cert-link" href="https://www.hackerrank.com/profile/veeramreddysesh1" target="_blank"
+                rel="noreferrer">View profile</a>
+            </div>
+            <h3 class="cert-title">Python 5-Star Golden Badge</h3>
+            <div class="cert-org">Demonstrated strong Python problem-solving skills</div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- CTA BANNER -->
+    <section class="cta-section">
+      <div class="shell">
+        <div class="cta-band reveal-up">
+          <div class="cta-band-orb" aria-hidden="true"></div>
+          <div class="cta-text">
+            <h2>Let's Work Together</h2>
+            <p>Have a dataset, idea, or problem? I'd love to help turn it into decisions.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-white" href="#contact">Contact Me</a>
+            <a class="btn btn-outline-white" href="resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" data-section>
+      <div class="shell">
+        <div class="section-header reveal-up">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Let’s build something great.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form-col reveal-left">
+            <form id="contactForm" class="contact-form" action="/send-email" method="post" novalidate
+              autocomplete="off">
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                  <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required
+                    minlength="2" maxlength="80" />
+                  <div class="field-error" data-error-for="name" role="alert"></div>
+                </div>
+                <div class="field">
+                  <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                  <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required
+                    maxlength="120" />
+                  <div class="field-error" data-error-for="email" role="alert"></div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a topic...</option>
+                  <option value="internship">Internship Opportunity</option>
+                  <option value="project">Project Collaboration</option>
+                  <option value="data-analysis">Data Analysis Work</option>
+                  <option value="ml">Machine Learning Project</option>
+                  <option value="dashboard">Dashboard / BI Work</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your project, idea, or question..."
+                  required minlength="10" maxlength="1200"></textarea>
+                <div class="field-meta">
+                  <div class="field-error" data-error-for="message" role="alert"></div>
+                  <div class="field-count" id="messageCount">0 / 1200</div>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-submit" type="submit">
+                <span class="btn-label">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="contact-info-col reveal-right">
+            <div class="contact-info-cards">
+              <a class="contact-info-card" href="mailto:veeramreddyseshaveni6661@gmail.com">
+                <div class="ci-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 6h16v13H4z" stroke="currentColor" stroke-width="1.8" fill="none" />
+                    <path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="1.8" fill="none" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">Email</div>
+                  <div class="ci-val">veeramreddyseshaveni6661<br>@gmail.com</div>
+                </div>
+                <button class="mini-action" type="button" data-copy="veeramreddyseshaveni6661@gmail.com">Copy</button>
+              </a>
+
+              <a class="contact-info-card" href="tel:+919959245845">
+                <div class="ci-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M6.6 10.8a15.35 15.35 0 0 0 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.36.03.74-.25 1.01L6.6 10.8z"
+                      stroke="currentColor" stroke-width="1.8" fill="none" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">Phone</div>
+                  <div class="ci-val">+91-9959245845</div>
+                </div>
+              </a>
+
+              <a class="contact-info-card" href="https://www.linkedin.com/in/seshaveni758" target="_blank"
+                rel="noreferrer">
+                <div class="ci-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      stroke="currentColor" stroke-width="1.8" fill="none" />
+                    <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.8" fill="none" />
+                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8" fill="none" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">LinkedIn</div>
+                  <div class="ci-val">/in/seshaveni758</div>
+                </div>
+              </a>
+
+              <a class="contact-info-card" href="https://github.com/Seshaveni123" target="_blank" rel="noreferrer">
+                <div class="ci-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="ci-label">GitHub</div>
+                  <div class="ci-val">/Seshaveni123</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-quote">
+              <blockquote>"Data is the new oil, but insight is the refinery."</blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <div class="brand-mark">VS</div>
+          <div>
+            <div class="footer-name">Seshaveni Veeramreddy</div>
+            <div class="footer-role">Aspiring Data Scientist</div>
+          </div>
+        </div>
+        <p class="footer-copy">© <span id="currentYear">2026</span> Seshaveni. Built with passion &amp;
+          Python.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://github.com/Seshaveni123" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 16 16">
+            <path
+              d="M8 1a7 7 0 0 0-2.21 13.64c.35.06.48-.15.48-.34v-1.2c-1.94.42-2.35-.82-2.35-.82-.32-.8-.78-1.02-.78-1.02-.64-.44.05-.43.05-.43.71.05 1.08.73 1.08.73.63 1.07 1.64.76 2.04.58.06-.46.25-.76.44-.94-1.55-.18-3.18-.78-3.18-3.47 0-.77.27-1.4.73-1.89-.07-.18-.32-.9.07-1.87 0 0 .6-.19 1.96.73A6.82 6.82 0 0 1 8 5.16c.54 0 1.09.07 1.6.22 1.36-.92 1.96-.73 1.96-.73.39.97.14 1.69.07 1.87.46.49.73 1.12.73 1.89 0 2.7-1.64 3.29-3.2 3.46.25.22.48.64.48 1.3v1.92c0 .19.13.4.48.34A7 7 0 0 0 8 1z"
+              fill="currentColor" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/seshaveni758" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 16 16">
+            <path
+              d="M2 5.5h3V14H2zM3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM6.5 5.5h2.8v1.1h.04c.39-.74 1.34-1.5 2.76-1.5C14.3 5.1 14.9 7 14.9 9.5V14h-3V10c0-1-.02-2.4-1.46-2.4-1.46 0-1.69 1.15-1.69 2.32V14h-3V5.5z"
+              fill="currentColor" />
+          </svg>
+        </a>
+        <a href="mailto:veeramreddyseshaveni6661@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 16 16">
+            <path d="M2 4h12v9H2z" stroke="currentColor" stroke-width="1.2" fill="none" />
+            <path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.2" fill="none" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top" type="button">
+    <svg viewBox="0 0 16 16">
+      <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+        stroke-linejoin="round" fill="none" />
+    </svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div class="availability-pill" id="availabilityPill" aria-live="polite">Checking live status...</div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+  <script src="js/main.js?v=2" defer></script>
+</body>
+
+</html>
