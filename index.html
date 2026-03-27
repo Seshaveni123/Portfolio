@@ -67,11 +67,12 @@
   <header class="site-header" id="top">
     <nav class="nav shell" aria-label="Primary">
       <a class="brand" href="#home" aria-label="Home">
-        <span class="brand-text">S <span class="brand-dot">.</span></span>
+        <span class="brand-text">S<span class="brand-dot">.</span></span>
       </a>
 
       <div class="nav-links" data-nav>
         <a class="nav-link" href="#about" data-text="About">About</a>
+        <a class="nav-link" href="#education" data-text="Education">Education</a>
         <a class="nav-link" href="#skills" data-text="Skills">Skills</a>
         <a class="nav-link" href="#work" data-text="Projects">Projects</a>
         <a class="nav-link" href="#certifications" data-text="certifications">certifications</a>
@@ -134,46 +135,22 @@
           Available for internships &amp; collaborations
         </div>
 
-        <div class="hero-profile">
-          <div class="hero-photo-wrap reveal-up" data-delay="0">
-            <img src="images/sesha.jpeg" alt="Veeramreddy Seshaveni" class="hero-photo">
-          </div>
-          <h1 class="hero-name reveal-up" data-delay="100">
-            Seshaveni <span class="hero-name-accent">Veeramreddy</span>
-          </h1>
+        <h1 class="hero-name hero-headline reveal-up" data-delay="100">
+          <span class="hero-name-accent">Seshaveni Veeramreddy</span>
+        </h1>
+
+        <div class="hero-tagline reveal-up" data-delay="200">
+          <span class="typing" style="--typing-steps: 23; --typing-width: 23ch;">
+            <span class="typing-text">Data Science Enthusiast</span>
+          </span>
         </div>
 
         <p class="hero-desc reveal-up" data-delay="300">
           Aspiring Data Scientist passionate about building data-driven solutions and deriving insights using Python,
-          Machine Learning,
-          Data Analytics, &amp; Data Visualization tools.
+          Machine Learning, Data Analytics, and Visualization.
         </p>
 
-        <div class="hero-actions reveal-up" data-delay="400">
-          <a class="btn btn-primary" href="#work">
-            <span>View Projects</span>
-            <svg viewBox="0 0 16 16">
-              <path d="M2 8h12M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" fill="none" />
-            </svg>
-          </a>
-          <a class="btn btn-outline" href="resume.pdf" download>
-            <svg viewBox="0 0 16 16">
-              <path d="M8 2v8M4 7l4 4 4-4M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" fill="none" />
-            </svg>
-            <span>Download CV</span>
-          </a>
-        </div>
-
-        <div class="hero-chips reveal-up" data-delay="500">
-          <a class="hero-chip" href="mailto:veeramreddyseshaveni6661@gmail.com">
-            <svg viewBox="0 0 16 16">
-              <path d="M2 4h12v9H2z" stroke="currentColor" stroke-width="1.2" fill="none" />
-              <path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.2" fill="none" />
-            </svg>
-            Gmail
-          </a>
+        <div class="hero-chips reveal-up" data-delay="400">
           <a class="hero-chip" href="https://www.linkedin.com/in/seshaveni758" target="_blank" rel="noreferrer">
             <svg viewBox="0 0 16 16">
               <path
@@ -190,6 +167,13 @@
             </svg>
             GitHub
           </a>
+          <a class="hero-chip" href="mailto:veeramreddyseshaveni6661@gmail.com">
+            <svg viewBox="0 0 16 16">
+              <path d="M2 4h12v9H2z" stroke="currentColor" stroke-width="1.2" fill="none" />
+              <path d="m2 4 6 5 6-5" stroke="currentColor" stroke-width="1.2" fill="none" />
+            </svg>
+            Email
+          </a>
           <span class="hero-chip hero-chip--loc">
             <svg viewBox="0 0 16 16">
               <path d="M8 1a5 5 0 0 0-5 5c0 3.5 5 9 5 9s5-5.5 5-9a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
@@ -197,6 +181,16 @@
             </svg>
             Phagwara, India
           </span>
+        </div>
+
+        <div class="hero-actions reveal-up" data-delay="500">
+          <a class="btn btn-outline" href="resume.pdf" download>
+            <svg viewBox="0 0 16 16">
+              <path d="M8 2v8M4 7l4 4 4-4M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" fill="none" />
+            </svg>
+            <span>Download CV</span>
+          </a>
         </div>
       </div>
 
@@ -210,7 +204,30 @@
     <section class="section" id="about" data-section>
       <div class="shell">
         <div class="about-grid">
-          <div class="about-left reveal-left">
+          <div class="about-photo-col reveal-left">
+            <div class="hero-photo-wrap about-photo-wrap">
+              <img src="images/sesha.jpeg" alt="Veeramreddy Seshaveni" class="hero-photo">
+            </div>
+
+            <div class="hero-actions about-actions">
+              <a class="btn btn-primary" href="#work">
+                <span>View Projects</span>
+                <svg viewBox="0 0 16 16">
+                  <path d="M2 8h12M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+              </a>
+              <a class="btn btn-outline" href="resume.pdf" download>
+                <svg viewBox="0 0 16 16">
+                  <path d="M8 2v8M4 7l4 4 4-4M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" fill="none" />
+                </svg>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-left about-right reveal-right">
             <div class="section-label">About Me</div>
             <h2 class="section-title">A calm, curious builder<br>who finds stories in data.</h2>
             <p>
@@ -224,38 +241,50 @@
               I also enjoy experimenting with new tools and techniques, reading the latest research in AI and ML, and
               designing dashboards that make complex data easy to interpret and act upon.
               My goal is to transform raw data into clear, actionable insights that can drive meaningful impact.
-
-
-
             </p>
-
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="about-right reveal-right">
-            <div class="about-education">
-              <div class="section-label">Education</div>
+    <!-- EDUCATION -->
+    <section class="section section-tint" id="education" data-section>
+      <div class="shell">
+        <div class="section-header reveal-up">
+          <div class="section-label">Education</div>
+          <h2 class="section-title">Academic journey<br>and foundations.</h2>
+        </div>
 
-              <div class="edu-list">
-                <article class="edu-card reveal-up" data-delay="0">
-                  <h3 class="edu-school">Lovely Professional University</h3>
-                  <div class="edu-degree">Bachelor of Technology - Computer Science and Engineering</div>
-                  <div class="edu-score">CGPA: 7.5</div>
-                </article>
-
-                <article class="edu-card reveal-up" data-delay="100">
-                  <h3 class="edu-school">Bhashyam Junior College</h3>
-                  <div class="edu-degree">Intermediate</div>
-                  <div class="edu-score">Percentage: 96.8%</div>
-                </article>
-
-                <article class="edu-card reveal-up" data-delay="200">
-                  <h3 class="edu-school">Bhashyam School</h3>
-                  <div class="edu-degree">Matriculation</div>
-                  <div class="edu-score">Percentage: 100%</div>
-                </article>
-              </div>
+        <div class="cert-grid">
+          <article class="cert-card" data-delay="0">
+            <div class="edu-year" aria-label="Year">2027</div>
+            <div class="cert-top">
+              <div class="cert-issuer">University</div>
             </div>
-          </div>
+            <h3 class="cert-title">Lovely Professional University</h3>
+            <div class="cert-org">B.Tech - CSE</div>
+            <div class="cert-org">CGPA: 7.5</div>
+          </article>
+
+          <article class="cert-card" data-delay="100">
+            <div class="edu-year" aria-label="Year">2023</div>
+            <div class="cert-top">
+              <div class="cert-issuer">College</div>
+            </div>
+            <h3 class="cert-title">Bhashyam Junior College</h3>
+            <div class="cert-org">Intermediate</div>
+            <div class="cert-org">96.8%</div>
+          </article>
+
+          <article class="cert-card" data-delay="200">
+            <div class="edu-year" aria-label="Year">2021</div>
+            <div class="cert-top">
+              <div class="cert-issuer">School</div>
+            </div>
+            <h3 class="cert-title">Bhashyam School</h3>
+            <div class="cert-org">Matriculation</div>
+            <div class="cert-org">100%</div>
+          </article>
         </div>
       </div>
     </section>

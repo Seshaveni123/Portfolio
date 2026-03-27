@@ -133,6 +133,33 @@
     });
   };
 
+  const initHeroTaglineTyping = () => {
+    const el = qs('.hero-tagline .typing-text');
+    if (!el) return;
+
+    const fullText = (el.dataset.text || el.textContent || '').trim();
+    if (!fullText) return;
+
+    if (reducedMotion) {
+      el.textContent = fullText;
+      return;
+    }
+
+    el.textContent = '';
+
+    let index = 0;
+    const startDelayMs = 220;
+    const charDelayMs = 65;
+
+    const tick = () => {
+      index += 1;
+      el.textContent = fullText.slice(0, index);
+      if (index < fullText.length) window.setTimeout(tick, charDelayMs);
+    };
+
+    window.setTimeout(tick, startDelayMs);
+  };
+
   const initScrollAnimations = () => {
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
       qsa('.reveal-up, .reveal-left, .reveal-right').forEach((el) => {
@@ -531,6 +558,7 @@
     initThemeToggle();
     initSmoothScroll();
     initHeroParticles();
+    initHeroTaglineTyping();
     initScrollAnimations();
     initProjectFilters();
     initMobileNav();
